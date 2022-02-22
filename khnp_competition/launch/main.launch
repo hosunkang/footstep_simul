@@ -9,7 +9,11 @@
 <!-- Edit this part with your own algorithms -->
 <!-- In detail, below three lines are control codes with open sources or temporal code-->
   <include file="$(find pipebot_config)/launch/bringup.launch"/> <!-- You can also edit .yaml files regarding control gains, configs, etc. -->
-
+  <include file="$(find champ_teleop)/launch/teleop.launch">
+    <arg name="joy"  default="true"/>
+    <arg name="dev"  default="/dev/input/js1"/>
+  </include>
+  
   <!-- Gazebo -->
   <arg name="gazebo_world" value="$(find khnp_competition)/../gazebo_map_for_khnp/course_A.world"/>
   <include file="$(find pipebot_config)/launch/gazebo.launch">
@@ -19,15 +23,6 @@
       <arg name="verbose" value="$(arg verbose)"/>
       <arg name="pause" value="$(arg pause)"/>
   </include>
-
-  <!--  MAIN code -->
-  <param name="/img_width" value="480"/> <!-- only for visualization, not for real image width -->
-  <param name="/img_height" value="320"/> 
-  <param name="/first_cam_topic" value="/l515/depth/rgb_image_raw/compressed"/>
-  <param name="/third_cam_topic" value="/third_camera/rgb/image_raw/compressed"/>
-  <param name="/third_cam_name" value="third_camera"/>
-  <param name="/robot_name" value="/"/>
-
   <node name="khnp_competition_tf_broadcaster" pkg="khnp_competition" type="tf_broadcaster.py" output="screen"/>
 
 </launch>

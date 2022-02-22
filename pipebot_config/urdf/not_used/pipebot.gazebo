@@ -98,48 +98,6 @@
   <selfCollide>true</selfCollide>
 </gazebo>
 
-<gazebo reference="ARM_1_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="ARM_2_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="ARM_3_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="ARM_4_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="ARM_5_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="ARM_6_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
 <gazebo reference="FL_foot_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
